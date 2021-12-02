@@ -1,0 +1,392 @@
+*{
+    margin: 0; padding:0; box-sizing: border-box;
+}
+
+.top-1{
+   position: relative;
+    height: 75vh;
+}
+.top-1::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 75vh;
+    background: url(images/main-bg.webp) no-repeat center center/cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+.nav-main{
+    /* border: black 3px solid; */
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.nav-1{
+    position: absolute;
+    /* border: rgb(255, 255, 255) solid 2px; */
+    width: 98%;
+    height: 6.7vh;
+    margin-top:20px;
+    align-items: center;
+    /* background:linear-gradient(white 85% , black); */
+}
+
+.logo-1{
+    /* border: black 1px solid; */
+    border-radius: 30px;
+    width: 12%;
+     background:linear-gradient(white  , rgb(97, 97, 97));
+    
+    
+
+}
+.logo-1 img{
+    /* border: black 1px solid; */
+width: 170px;
+height: 50px;
+margin-left: 24px;
+margin-top: 5px;
+}
+.right-nav{
+    /* border: white 2px solid; */
+    width: 40%;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    margin-left: 59%;
+    margin-top: -5vh;
+
+}
+.top-logo3{
+    width: 40px;
+    height: 40px;
+    /* background: linear-gradient(rgb(167, 96, 10),white); */
+}
+.top-logo3 img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.right-nav ul{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.right-nav ul li{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 4px 8px;
+    position: relative;
+    background-color: rgb(14, 14, 46);
+    color: white;
+}
+.right-nav ul li:hover{
+   background: linear-gradient(white 60%, rgb(14, 14, 46));
+   color: rgb(14, 14, 46);
+}
+.right-nav ul li::before{
+    position: absolute;
+    content: "";
+    border-bottom: black solid 3px;
+    width: 0;
+    height:3px;
+    left: 0;
+    top: 28px;
+}
+.right-nav ul li:hover::before{
+    
+width: 100%;
+
+transition:all linear 1s;
+}
+
+.secttion-1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* border: white 4px solid; */
+    width: 25%;
+    height: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+   
+   
+    box-shadow:white 10px -15px 10px ;
+    animation-name: look;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.1, 0.6, 1.0, 0.5);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes look{
+    from{
+        border-radius: 0%;
+        color:white;
+        
+    }
+    to{
+        border-radius: 50%;
+        
+        color: rgb(255, 230, 0);
+       
+        
+      
+    }
+
+}
+.secttion-1::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 25vh;
+    background:linear-gradient(rgb(14, 14, 46)85%,white) ;
+    opacity: 0.6;
+    z-index: -1;
+
+}
+.top-h1{
+    
+  
+   text-align: center;
+   font-size: 1.5rem;
+   line-height: 1.5;
+   
+}
+
+.section-2{
+    /* border: black 2px solid; */
+
+}
+.section-2 .div-1{
+    /* border: black 2px solid; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14vh;
+
+}
+.section-2 .div-2 {
+    width: 46%;
+    color: white;
+    border-radius: 20px;
+    background:linear-gradient(rgb(14, 14, 46)85%,white) ;
+    padding: 20px;
+    text-align: center;
+
+    
+}
+.section-2 .div-1 img{
+    width: 120px;
+    height: 120px;
+}
+.div-3{
+    width: 15%;
+    height: 10vh;
+  /* border: black 2px solid; */
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background:linear-gradient(rgb(14, 14, 46)85%,white) ;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2vh;
+}
+.hours{
+  /* border: black 2px solid; */
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.section-3{
+    margin-top: 5vh;
+    padding-top: 4vh;
+
+}
+.section-3 .div-1{
+     /* border: black 2px solid; */
+     
+     width: 63%;
+     height: 1292px;
+     padding:  60px;
+     margin-left: auto;
+     margin-right: auto;
+     columns: 2;
+     column-gap: 10%;
+}
+
+
+
+.section-3 .div-1 a{
+    text-decoration: none;
+}
+.section-3 .div-1 a:link{
+    color: black;
+    text-decoration: none;
+}
+.section-3 .div-1 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.shirt-no-1{
+     /* border: black 2px solid; */
+     margin-top: 7vh;
+     
+     height: 547px;
+    width: 525px;
+
+}
+.section-3 .same-class{
+    width: 250px;
+
+    }
+
+/* .section-3 img:hover{
+    width: 450px;
+    transition: all 3s linear;
+}     */
+.size {
+    width: 308px;
+    height: 335px;
+}
+/* .size img:hover{
+  width: 550px;
+  transition: all linear 3s ;
+} */
+
+
+.shirt-tag{
+    
+    /* border: black 2px solid; */
+    color: white;
+    background: rgb(14, 14, 46);
+    margin-top: -2.5vh;
+    margin-left: 55%;
+    width: 40%;
+}
+.price{
+    /* text-align: center; */
+    padding-top: 20px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+.price h3{
+    text-transform:;
+}
+.price .red{
+    color: rgb(29, 112, 29);
+}
+.price-4{
+    margin-top: 15px;
+}
+.combine{
+    /* border: black 2px solid; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.combine .both{
+    /* border: black 2px solid; */
+}
+.combine .both img{
+    width: 600px;
+}
+.h-11{
+    width: 30%;
+    color: white;
+    text-align: center;
+    background: rgb(14, 14, 46);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-4{
+    /* border: black 2px solid; */
+
+}
+.t-shirt{
+    /* border: black 2px solid; */
+    width: 63%;
+    height: 1304px;
+    columns: 2;
+    margin-left: auto;
+    margin-right:auto;
+    column-gap: 10%;
+    padding:  60px;
+
+}
+.t-shirt a{
+    text-decoration: none;
+}
+.t-shirt a:link{
+    color: black;
+    text-decoration: none;
+}
+.t-shirt a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.t-shirt .same{
+    /* border: black 2px solid; */
+    width: 540px;
+    height: 553px;
+    margin-top: 7vh;
+}
+.same img{
+    max-width: 250px; 
+}
+.same img:hover{
+    i
+}
+.red-tshirt{
+    height: 314px;
+    margin-top: ;
+}
+
+.section-5{
+
+}
+.parent-div{
+    /* border: black 2px solid; */
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    color: white;
+    background: rgb(14, 14, 46);
+    margin-top: 4vh;
+    
+}
+.parent-div .div-1{
+    /* border: black 2px solid; */
+    line-height: 1.7;
+
+}
+.parent-div .div-1 h4{
+    padding: 7px 0;
+    cursor: pointer;
+}
+.parent-div .div-1 p{
+    cursor: pointer;
+}
