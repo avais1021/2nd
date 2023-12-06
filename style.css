@@ -130,10 +130,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-
-
+    color : wheat;
     box-shadow: white 10px -15px 10px;
-    animation-name: look;
+/*     animation-name: look; */
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.1, 0.6, 1.0, 0.5);
     animation-iteration-count: infinite;
